@@ -10,6 +10,13 @@ import com.opencsv.CSVReader;
 
 public class CsvRead {
 
+	/**
+	 * Reads from csv file into a List
+	 * 
+	 * @param file
+	 * @return List<String[]>
+	 * @throws IOException
+	 */
 	public List<String[]> read(String file) throws IOException {
 		List<String[]> rows = null;
 		try {
