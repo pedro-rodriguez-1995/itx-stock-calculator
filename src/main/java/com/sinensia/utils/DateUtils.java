@@ -11,11 +11,11 @@ import com.sinensia.classes.Stock;
 
 public class DateUtils {
 	
-	public static ArrayList<LocalDate> lastFridayOfMonth(ArrayList<Stock> stocklist){
+	public static ArrayList<LocalDate> lastFridayOfMonth(){
 		ArrayList<LocalDate> daystobuy = new ArrayList<LocalDate>();
 		
 		
-		Collections.reverse(stocklist);
+		
 		
 		
 		for (LocalDate date = LocalDate.parse("2001-05-23"); date
@@ -34,7 +34,7 @@ public class DateUtils {
 	
 	public static ArrayList<Stock> findAvailableDay(ArrayList<LocalDate> daystobuy ,ArrayList<Stock> stocklist){
 		
-		
+		Collections.reverse(stocklist);
 		ArrayList<Stock> customstocklist = new ArrayList<Stock>();
 		for (LocalDate daytobuy : daystobuy) {
 			int i = 0;
