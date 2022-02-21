@@ -17,7 +17,7 @@ public class CsvRead {
 	 * @return List<String[]>
 	 * @throws IOException
 	 */
-	public List<String[]> read(String file) throws IOException {
+	public static List<String[]> read(String file) throws IOException {
 		List<String[]> rows = null;
 		try {
 
