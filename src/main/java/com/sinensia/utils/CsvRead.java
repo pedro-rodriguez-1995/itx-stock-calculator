@@ -13,9 +13,9 @@ public class CsvRead {
 	/**
 	 * Reads from csv file into a List
 	 * 
-	 * @param file
-	 * @return List<String[]>
-	 * @throws IOException
+	 * @param file the path of the file
+	 * @return List<String[]> all the lines of the csv file
+	 * @throws IOException when the file is not found
 	 */
 	public static List<String[]> read(String file) throws IOException {
 		List<String[]> rows = null;
