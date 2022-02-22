@@ -73,6 +73,8 @@ The purchase of the shares is made at the opening price of that day of purchase.
 
 Calculate what the final capital obtained will be, if you make the total sale of your stocks on December 28, 2017 at the closing price of the listing.
 
+The final result is 36585.568€ which is equal to the total amount of stocks bought (1254.219) multiplied by the closing price December 28, 2017
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
