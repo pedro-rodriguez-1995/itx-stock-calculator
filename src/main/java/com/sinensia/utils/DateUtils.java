@@ -11,15 +11,15 @@ import com.sinensia.classes.Stock;
 
 public class DateUtils {
 	
-	public static ArrayList<LocalDate> lastFridayOfMonth(){
+	public static ArrayList<LocalDate> lastThursdayPlusOfMonth(String firstdate, String lastdate){
 		ArrayList<LocalDate> daystobuy = new ArrayList<LocalDate>();
 		
 		
 		
 		
 		
-		for (LocalDate date = LocalDate.parse("2001-05-23"); date
-				.isBefore(LocalDate.parse("2017-12-29")); date = date.plusMonths(1)) {
+		for (LocalDate date = LocalDate.parse(firstdate); date
+				.isBefore(LocalDate.parse(lastdate)); date = date.plusMonths(1)) {
 
 			LocalDate daytobuy = LocalDate.of(date.getYear(), date.getMonth(), date.getDayOfMonth())
 					.with(lastInMonth(THURSDAY)).plusDays(1);
