@@ -11,6 +11,13 @@ import com.sinensia.classes.Stock;
 
 public class DateUtils {
 	
+	/**
+	 * Finds the last thursday plus 1 day of each month of a given interval of dates
+	 * 
+	 * @param firstdate the first date of the interval
+	 * @param lastdate the last date of the interval
+	 * @return all the days found
+	 */
 	public static ArrayList<LocalDate> lastThursdayPlusOfMonth(String firstdate, String lastdate){
 		ArrayList<LocalDate> daystobuy = new ArrayList<LocalDate>();
 		
@@ -32,6 +39,13 @@ public class DateUtils {
 		return daystobuy;
 	}
 	
+	/**
+	 * Finds stocks available to buy stocks given a list of dates
+	 * 
+	 * @param daystobuy the list of dates
+	 * @param stocklist the list with all the stocks
+	 * @return all the stocks available to buy
+	 */
 	public static ArrayList<Stock> findAvailableDay(ArrayList<LocalDate> daystobuy ,ArrayList<Stock> stocklist){
 		
 		Collections.reverse(stocklist);
