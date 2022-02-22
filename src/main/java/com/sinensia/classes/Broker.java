@@ -50,8 +50,10 @@ public class Broker {
 			this.setTotalstocks(this.getTotalstocks().add(stocksbought));
 
 			System.out.println(stock.getDate() + " Stock bought at opening price of: " + stock.getOpprice().toString()
-					+ "€ for a total of: " + stocksbought.toString() + " stocks Total stocks in this account: "
-					+ this.totalstocks.toString() + " Total commission: " + this.getTotalcommission().toString() + "€");
+
+					+ "â‚¬ for a total of: " + stocksbought.toString() + " stocks Total stocks in this account: "
+					+ this.totalstocks.toString() + " Total commission: " + this.getTotalcommission().toString() + "â‚¬");
+
 
 		}
 
@@ -64,14 +66,16 @@ public class Broker {
 
 			if (stock.getDate().equals(date)) {
 
+
 				benefit = this.getTotalstocks().multiply(stock.getClprice()).setScale(3, BigDecimal.ROUND_HALF_EVEN);
 
 				System.out.println("You've sold all your: " + this.getTotalstocks() + " stocks at a price of: "
-						+ stock.getClprice() + "€ per stock" + " for a total of: " + benefit + "€");
+						+ stock.getClprice() + "â‚¬ per stock" + " for a total of: " + benefit + "â‚¬");
 
 				this.setTotalstocks(new BigDecimal(0));
 
 			}
+
 
 		}
 		return benefit;

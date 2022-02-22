@@ -38,7 +38,7 @@ public class Principal {
 						
 					
 			}
-			ArrayList<LocalDate> daystobuy = DateUtils.lastFridayOfMonth();
+			ArrayList<LocalDate> daystobuy = DateUtils.lastThursdayPlusOfMonth("2001-05-23","2017-12-28");
 			ArrayList<Stock> customstocklist = DateUtils.findAvailableDay(daystobuy, stocklist);
 			
 			Broker brk = new Broker(new BigDecimal(0), new BigDecimal(2), new BigDecimal(0));
