@@ -6,9 +6,7 @@
 <div align="center">
  
 <h3 align="center">itx-stock-calculator</h3>
-
   <p align="center">
-    
     <br />
     <a href="https://github.com/pedro-rodriguez-1995/itx-stock-calculator"><strong>Explore the docs »</strong></a>
     <br />
