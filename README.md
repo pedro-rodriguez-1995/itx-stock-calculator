@@ -8,7 +8,7 @@
 <h3 align="center">itx-stock-calculator</h3>
 
   <p align="center">
-    project_description
+    
     <br />
     <a href="https://github.com/pedro-rodriguez-1995/itx-stock-calculator"><strong>Explore the docs »</strong></a>
     <br />
