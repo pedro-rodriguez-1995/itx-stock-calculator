@@ -52,12 +52,12 @@ This project is for an exam from a online course to learn Java+Liferay.
 
 ### Built With
 
-* [Java](https://www.java.com/)
-* [Maven](https://maven.apache.org/)
-* [OpenCSV](https://mvnrepository.com/artifact/com.opencsv/opencsv)
-* [JUnit](https://junit.org/)
-
-
+* [Java 8](https://www.java.com/)
+* [Maven 3.8.4](https://maven.apache.org/)
+* [OpenCSV 4.1](https://mvnrepository.com/artifact/com.opencsv/opencsv)
+* [JUnit4 4.12](https://junit.org/)
+* [JUnitParams 1.1.0](https://www.baeldung.com/junit-params)
+* [Eclipse 4.22.0](https://www.eclipse.org/)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -75,6 +75,22 @@ The purchase of the shares is made at the opening price of that day of purchase.
 Calculate what the final capital obtained will be, if you make the total sale of your stocks on December 28, 2017 at the closing price of the listing.
 
 The final result is 36585.568€ which is equal to the total amount of stocks bought (1254.219) multiplied by the closing price December 28, 2017
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## Installation and requirements
+
+You need to have Java JRE8 installed and configured in your computer. Follow this <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html">guide</a>. 
+
+Download the itx-stock-calculator-jar-with-dependencies.jar file.
+
+Open a cmd window in the same directory as the itx-stock-calculator-jar-with-dependencies.jar file
+
+Execute this command
+```bash
+java -jar .\itx-stock-calculator-jar-with-dependencies.jar
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
