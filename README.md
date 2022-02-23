@@ -16,7 +16,6 @@
     ·
     <a href="https://github.com/pedro-rodriguez-1995/itx-stock-calculator/issues">Report Bug</a>
     ·
-
     <a href="https://github.com/pedro-rodriguez-1995/itx-stock-calculator/issues">Request Feature</a>
   </p>
 </div>
