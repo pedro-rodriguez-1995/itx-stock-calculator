@@ -6,25 +6,22 @@ import static java.time.temporal.TemporalAdjusters.lastInMonth;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import com.sinensia.classes.Stock;
 
 public class DateUtils {
-	
+
 	/**
 	 * Finds the last thursday plus 1 day of each month of a given interval of dates
 	 * 
 	 * @param firstdate the first date of the interval
-	 * @param lastdate the last date of the interval
+	 * @param lastdate  the last date of the interval
 	 * @return all the days found
 	 */
-	public static ArrayList<LocalDate> lastThursdayPlusOfMonth(String firstdate, String lastdate){
+	public static List<LocalDate> lastThursdayPlusOfMonth(String firstdate, String lastdate) {
 		ArrayList<LocalDate> daystobuy = new ArrayList<LocalDate>();
-		
-		
-		
-		
-		
+
 		for (LocalDate date = LocalDate.parse(firstdate); date
 				.isBefore(LocalDate.parse(lastdate)); date = date.plusMonths(1)) {
 
@@ -34,11 +31,10 @@ public class DateUtils {
 			daystobuy.add(daytobuy);
 
 		}
-		
-		
+
 		return daystobuy;
 	}
-	
+
 	/**
 	 * Finds stocks available to buy stocks given a list of dates
 	 * 
@@ -46,8 +42,8 @@ public class DateUtils {
 	 * @param stocklist the list with all the stocks
 	 * @return all the stocks available to buy
 	 */
-	public static ArrayList<Stock> findAvailableDay(ArrayList<LocalDate> daystobuy ,ArrayList<Stock> stocklist){
-		
+	public static List<Stock> findAvailableDay(List<LocalDate> daystobuy, List<Stock> stocklist) {
+
 		Collections.reverse(stocklist);
 		ArrayList<Stock> customstocklist = new ArrayList<Stock>();
 		for (LocalDate daytobuy : daystobuy) {
@@ -71,6 +67,5 @@ public class DateUtils {
 		}
 		return customstocklist;
 	}
-	
 
 }
